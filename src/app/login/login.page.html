@@ -1,14 +1,29 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-app style="background: linear-gradient(0deg, white 50%, #015175 50%) !important;">
+  <div class="box center" >
+    <ion-card class="box-login">
+      <ion-card-header style="bottom: 15px;">      
+        <ion-card-title>
+          <ion-img src="/assets/supra_logo.png" style="width: 250px;"></ion-img>
+        </ion-card-title>
+      </ion-card-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+      <ion-card-content class="box-input">
+        <ion-item>
+          <ion-label>Email</ion-label><br>
+          <ion-input></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Senha</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+         
+        <button class="btn btn-block btn-primary">Entrar</button>
+        <small>Ainda não tem acesso? <a> Registre-se.</a></small>
+
+      </ion-card-content>
+    </ion-card>
   </div>
-</ion-content>
+  <ion-footer class="border-top center">
+    <ion-img src="/assets/trio_logos.png" style="width: 250px;"></ion-img>
+  </ion-footer>
+</ion-app>
