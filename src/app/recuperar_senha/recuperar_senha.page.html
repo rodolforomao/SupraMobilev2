@@ -1,9 +1,30 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>recuperar_senha</ion-title>
-  </ion-toolbar>
-</ion-header>
+<div class="box center">
+  <ion-card class="box-login">
+    <ion-card-header style="bottom: 15px;">      
+      <ion-card-title>
+        <ion-img src="/assets/supra_logo.png" style="width: 250px;"></ion-img>
+      </ion-card-title>
+    </ion-card-header>
 
-<ion-content>
+    <ion-card-content id="block_recuperar" class="box-input">
+        <ion-card-subtitle class="left">Digite seu endereco de email que enviaremos intruções para redefirnir sua senha!
+        </ion-card-subtitle>        
+      <ion-item>
+        <ion-icon name="at"></ion-icon><br>
+        <ion-input placeholder="Email"></ion-input>
+      </ion-item>        
+      <button class="btn btn-block btn-primary">Enviar</button>
+    </ion-card-content>
 
-</ion-content>
+    <ion-card-content id="block_conf_recuperar" class="box-input" style="display:none;">
+        <ion-card-title class="left">Pronto :)</ion-card-title>
+        <ion-card-subtitle class="left">As instruções para redefinição de senha foram enviadas para seu email!
+        </ion-card-subtitle>         
+      <button routerLink="login" routerDirection="root" class="btn btn-block btn-primary">Voltar</button>
+    </ion-card-content>
+
+  </ion-card>
+</div>
+<ion-footer class="border-top center">
+  <ion-img src="/assets/trio_logos.png" style="width: 250px;"></ion-img>
+</ion-footer>

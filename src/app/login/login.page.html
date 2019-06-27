@@ -1,29 +1,27 @@
-<ion-app style="background: linear-gradient(0deg, white 50%, #015175 50%) !important;">
-  <div class="box center" >
-    <ion-card class="box-login">
-      <ion-card-header style="bottom: 15px;">      
-        <ion-card-title>
-          <ion-img src="/assets/supra_logo.png" style="width: 250px;"></ion-img>
-        </ion-card-title>
-      </ion-card-header>
+<div class="box center">
+  <ion-card class="box-login">
+    <ion-card-header style="bottom: 15px;">      
+      <ion-card-title>
+        <ion-img src="/assets/supra_logo.png" style="width: 250px;"></ion-img>
+      </ion-card-title>
+    </ion-card-header>
 
-      <ion-card-content class="box-input">
-        <ion-item>
-          <ion-label>Email</ion-label><br>
-          <ion-input></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-label>Senha</ion-label>
-          <ion-input></ion-input>
-        </ion-item>
-         
-        <button routerLink="lista_contratos" routerDirection="root" class="btn btn-block btn-primary">Entrar</button>
-        <small>Ainda não tem acesso? <a> Registre-se.</a></small>
+    <ion-card-content class="box-input">
+      <ion-item>
+        <ion-icon name="at"></ion-icon><br>
+        <ion-input placeholder="Email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="lock"></ion-icon><br>
+        <ion-input placeholder="Senha"></ion-input>
+      </ion-item>
+        
+      <button routerLink="lista_contratos" routerDirection="root" class="btn btn-block btn-primary">Entrar</button>
+      <small class="forgot-password"><a>Esqueci minha senha!</a></small>
 
-      </ion-card-content>
-    </ion-card>
-  </div>
-  <ion-footer class="border-top center">
-    <ion-img src="/assets/trio_logos.png" style="width: 250px;"></ion-img>
-  </ion-footer>
-</ion-app>
+    </ion-card-content>
+  </ion-card>
+</div>
+<ion-footer class="border-top center">
+  <ion-img src="/assets/trio_logos.png" style="width: 250px;"></ion-img>
+</ion-footer>

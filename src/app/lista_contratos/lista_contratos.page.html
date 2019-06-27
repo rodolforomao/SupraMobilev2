@@ -1,9 +1,47 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>lista_contratos</ion-title>
-  </ion-toolbar>
-</ion-header>
+<div class="box">
+    <ion-header>
+        <ion-searchbar animated placeholder="Pesquisar"></ion-searchbar>
+    </ion-header>
 
-<ion-content>
+    <div class="conteudo">
+      <ion-card>
+        <ion-item>
+          <ion-label><b>00 00831/2013</b></ion-label>
+          <ion-button fill="outline" slot="end" class="bg-green"><ion-icon name="cloud-done"></ion-icon></ion-button>
+          <ion-button fill="outline" slot="end" class="medium"><ion-icon name="more"></ion-icon></ion-button>
+        </ion-item>      
+        <ion-card-content>
+            BR-101/AL <br>
+            Consórsio Dynatest/Engemap
+          </ion-card-content>
+      </ion-card>
 
-</ion-content>
+      <ion-card>
+          <ion-item>
+            <ion-label><b>00 00564/2013</b></ion-label>
+            <ion-button fill="outline" slot="end" color="medium"><ion-icon name="cloud-download"></ion-icon></ion-button>
+            <ion-button fill="outline" slot="end" class="medium"><ion-icon name="more"></ion-icon></ion-button>
+          </ion-item>        
+          <ion-card-content>
+            BR-101/AL <br>
+            Consórsio Ethos
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+            <ion-item>
+              <ion-label><b>00 01016/2013</b></ion-label>
+              <ion-button fill="outline" slot="end" color="medium"><ion-icon name="cloud-download"></ion-icon></ion-button>
+              <ion-button fill="outline" slot="end" class="medium"><ion-icon name="more"></ion-icon></ion-button>
+            </ion-item>          
+            <ion-card-content>
+                BR-101/AL <br>
+                Accenture Brasil
+              </ion-card-content>
+          </ion-card>
+      </div>
+
+  </div>
+    <ion-footer class="border-top center">
+      <ion-img src="/assets/trio_logos.png" style="width: 250px;"></ion-img>
+    </ion-footer>

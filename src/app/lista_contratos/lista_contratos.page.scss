@@ -1,0 +1,33 @@
+.border-top{ 
+    border-top: 1px solid silver;
+}
+.center{
+    text-align: -moz-center;
+    text-align: -webkit-center; 
+}
+
+ion-searchbar{
+    background-color: #015175 !important;
+    color:white;
+    top: 15px;
+}
+
+ion-card-content{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+ion-card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.box{
+    width: 100vw;
+    height: 10vh;         
+    background: #015175 !important;
+}
+
+.conteudo{
+    margin-top:8%;
+}
