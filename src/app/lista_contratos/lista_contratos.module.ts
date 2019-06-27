@@ -5,7 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ListaContratosPage } from './lista-contratos.page';
+import { ListaContratosPage } from './lista_contratos.page';
 
 const routes: Routes = [
   {
