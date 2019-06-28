@@ -1,9 +1,141 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>riscos_interferencias_cgcont</ion-title>
-  </ion-toolbar>
-</ion-header>
+<div class="box">Riscos e Interferências</div>
 
 <ion-content>
+
+  <ion-item>
+    <ion-label position="stacked">Assunto</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  
+  <ion-row>
+    <ion-col size="6">
+      <ion-item>
+          <ion-label position="stacked">Tipo</ion-label>
+          <ion-select [interfaceOptions]="customActionSheetOptions" interface="action-sheet" placeholder="Selecione">
+            <ion-select-option value="option_1">Option 1</ion-select-option>
+            <ion-select-option value="option_2">Option 2</ion-select-option>
+            <ion-select-option value="option_3">Option 3</ion-select-option>
+            <ion-select-option value="option_4">Option 4</ion-select-option>
+          </ion-select>
+        </ion-item>
+        
+      </ion-col>
+      <ion-col size="6">
+        <ion-item>
+            <ion-label position="stacked">Classificação</ion-label>
+            <ion-select [interfaceOptions]="customActionSheetOptions" interface="action-sheet" placeholder="Selecione">
+              <ion-select-option value="option_1">Option 1</ion-select-option>
+              <ion-select-option value="option_2">Option 2</ion-select-option>
+              <ion-select-option value="option_3">Option 3</ion-select-option>
+              <ion-select-option value="option_4">Option 4</ion-select-option>
+            </ion-select>
+          </ion-item>  
+      </ion-col>
+    </ion-row>    
+
+    <ion-item>
+      <ion-label position="stacked">Grau de Impacto</ion-label>
+      <ion-select [interfaceOptions]="customActionSheetOptions" interface="action-sheet" placeholder="Selecione">
+        <ion-select-option value="option_1">Option 1</ion-select-option>
+        <ion-select-option value="option_2">Option 2</ion-select-option>
+        <ion-select-option value="option_3">Option 3</ion-select-option>
+        <ion-select-option value="option_4">Option 4</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label position="stacked">Br</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label position="stacked">Efeito</ion-label>
+          <ion-select [interfaceOptions]="customActionSheetOptions" interface="action-sheet" placeholder="Selecione">
+            <ion-select-option value="option_1">Option 1</ion-select-option>
+            <ion-select-option value="option_2">Option 2</ion-select-option>
+            <ion-select-option value="option_3">Option 3</ion-select-option>
+            <ion-select-option value="option_4">Option 4</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row> 
+
+    <ion-item>
+      <ion-label position="stacked">Tipo de Eixo</ion-label>
+      <ion-select [interfaceOptions]="customActionSheetOptions" interface="action-sheet" placeholder="Selecione">
+        <ion-select-option value="option_1">Option 1</ion-select-option>
+        <ion-select-option value="option_2">Option 2</ion-select-option>
+        <ion-select-option value="option_3">Option 3</ion-select-option>
+        <ion-select-option value="option_4">Option 4</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label position="stacked">Km Inicial</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label position="stacked">Km Final</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row> 
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label position="stacked">Previsão de Solução</ion-label>
+          <ion-datetime displayFormat="DD MM YY"></ion-datetime>
+        </ion-item>
+      </ion-col>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label position="stacked">Data Limite</ion-label>
+          <ion-datetime displayFormat="DD MM YY"></ion-datetime>
+        </ion-item>
+      </ion-col>
+    </ion-row> 
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label position="stacked">Impacto de Custo</ion-label>
+          <ion-select [interfaceOptions]="customActionSheetOptions" interface="action-sheet" placeholder="Selecione">
+            <ion-select-option value="option_1">Option 1</ion-select-option>
+            <ion-select-option value="option_2">Option 2</ion-select-option>
+            <ion-select-option value="option_3">Option 3</ion-select-option>
+            <ion-select-option value="option_4">Option 4</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label position="stacked">Impacto de Prazo</ion-label>
+          <ion-select [interfaceOptions]="customActionSheetOptions" interface="action-sheet" placeholder="Selecione">
+            <ion-select-option value="option_1">Option 1</ion-select-option>
+            <ion-select-option value="option_2">Option 2</ion-select-option>
+            <ion-select-option value="option_3">Option 3</ion-select-option>
+            <ion-select-option value="option_4">Option 4</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row> 
+
+    <ion-item>
+      <ion-label position="stacked">Resumo</ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <button routerLink="lista_riscos" routerDirection="root" class="btn btn-block btn-primary">Salvar</button>
+    </ion-item>
+    
 
 </ion-content>

@@ -1,15 +1,15 @@
-.border-top{ 
-    border-top: 1px solid silver;
-}
 .center{
     text-align: -moz-center;
     text-align: -webkit-center; 
 }
 
+.box{  
+    background: #015175 !important;
+}
+
 ion-searchbar{
     background-color: #015175 !important;
-    color:white;
-    top: 15px;
+    color:silver;
 }
 
 ion-card-content{
@@ -20,14 +20,4 @@ ion-card-content{
 ion-card{
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-.box{
-    width: 100vw;
-    height: 10vh;         
-    background: #015175 !important;
-}
-
-.conteudo{
-    margin-top:8%;
 }
