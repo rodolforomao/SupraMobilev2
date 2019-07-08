@@ -12,4 +12,5 @@ export class ListaContratosPage implements OnInit {
   ngOnInit() {
   }
 
+
 }

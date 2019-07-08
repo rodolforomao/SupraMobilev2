@@ -1,43 +1,49 @@
 
+<div class="box">
+  <ion-searchbar animated placeholder="Pesquisar"></ion-searchbar>
+</div>
 
-  <div class="box">
-    <ion-searchbar animated placeholder="Pesquisar"></ion-searchbar>
-  </div>
-
-  <ion-content>
-    <ion-card>
-      <ion-item>
-        <ion-label><b>00 00831/2013</b></ion-label>
-        <ion-button fill="outline" slot="end" class="bg-green"><ion-icon name="cloud-done"></ion-icon></ion-button>
-        <ion-button fill="outline" slot="end" class="medium"><ion-icon name="more"></ion-icon></ion-button>
-      </ion-item>      
-      <ion-card-content>
-          BR-101/AL <br>
-          Consórsio Dynatest/Engemap
-        </ion-card-content>
-    </ion-card>
-
-    <ion-card>
-      <ion-item>
-        <ion-label><b>00 00564/2013</b></ion-label>
-        <ion-button fill="outline" slot="end" color="medium"><ion-icon name="cloud-download"></ion-icon></ion-button>
-        <ion-button fill="outline" slot="end" class="medium"><ion-icon name="more"></ion-icon></ion-button>
-      </ion-item>        
-      <ion-card-content>
+<ion-content>
+  <ion-card>
+    <ion-item>
+      <ion-label><b>00 00831/2013</b></ion-label>      
+      <!-- <ion-button fill="outline" class="bg-green"><ion-icon name="cloud-done"></ion-icon></ion-button>
+      <ion-button fill="outline" class="medium"><ion-icon name="more"></ion-icon></ion-button> -->
+      <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" slot="end">
+        <ion-select-option value="download">Download</ion-select-option>
+        <ion-select-option value="visualizar">Visualizar</ion-select-option>
+        <ion-select-option value="excluir">Excluir</ion-select-option>
+      </ion-select>
+    </ion-item>      
+    <ion-card-content>
         BR-101/AL <br>
-        Consórsio Ethos
+        Consórsio Dynatest/Engemap
       </ion-card-content>
-    </ion-card>
+  </ion-card>
+  <ion-card>
+    <ion-item>
+      <ion-label><b>00 00564/2013</b></ion-label>
+      <ion-button fill="outline" slot="start" color="medium"><ion-icon name="cloud-download"></ion-icon></ion-button>
+      <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" slot="end">
+        <ion-select-option value="visualizar">Visualizar</ion-select-option>
+        <ion-select-option value="excluir">Excluir</ion-select-option>
+        </ion-select>
+    </ion-item>   
+    <ion-card-content>
+      BR-101/AL <br>
+      Consórsio Ethos
+    </ion-card-content>
+  </ion-card>
 
-    <ion-card>
-      <ion-item>
-        <ion-label><b>00 01016/2013</b></ion-label>
-        <ion-button fill="outline" slot="end" color="medium"><ion-icon name="cloud-download"></ion-icon></ion-button>
-        <ion-button fill="outline" slot="end" class="medium"><ion-icon name="more"></ion-icon></ion-button>
-      </ion-item>          
-      <ion-card-content>
-          BR-101/AL <br>
-          Accenture Brasil
-        </ion-card-content>
-    </ion-card>
-  </ion-content>
+  <ion-card>
+    <ion-item>
+      <ion-label><b>00 01016/2013</b></ion-label>
+      <ion-button fill="outline" slot="end" color="medium"><ion-icon name="cloud-download"></ion-icon></ion-button>
+      <ion-button fill="outline" slot="end" class="medium"><ion-icon name="more"></ion-icon></ion-button>
+    </ion-item>          
+    <ion-card-content>
+        BR-101/AL <br>
+        Accenture Brasil
+      </ion-card-content>
+  </ion-card>
+</ion-content>
