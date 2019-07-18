@@ -9,6 +9,9 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
+import { SQLite } from '@ionic-native/sqlite'
+
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -17,6 +20,9 @@ import { AppRoutingModule } from './app-routing.module';
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+
+    
+    
   ],
   bootstrap: [AppComponent]
 })
