@@ -12,11 +12,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { IonicStorageModule } from '@ionic/storage';
 import { SQLite } from '@ionic-native/sqlite/ngx';
 import { DatabaseProvider } from './database/database';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule , HttpClientModule],
   providers: [
     StatusBar,
     SplashScreen,
