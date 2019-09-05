@@ -10,7 +10,7 @@ export class contrato_provider {
   public onBuscarContrato() {
     return this.dbProvider.getDB()
     .then((db: SQLiteObject) => {
-      return db.executeSql('select * from teste', [])
+      return db.executeSql('select * from TbUsuario', [])
         .then((data: any) => {
           if (data.rows.length > 0) {
             let categories: any[] = [];
@@ -31,7 +31,7 @@ export class contrato_provider {
   public onSalvarContrato() {
     return this.dbProvider.getDB()
     .then((db: SQLiteObject) => {
-      return db.executeSql('select * from teste', [])
+      return db.executeSql('select * from TbUsuario', [])
         .then((data: any) => {
           if (data.rows.length > 0) {
             let categories: any[] = [];
